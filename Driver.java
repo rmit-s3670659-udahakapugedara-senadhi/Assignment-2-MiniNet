@@ -11,6 +11,19 @@ public class Driver {
 	
 	}
 	
+	public static void txtUsers() {
+		ArrayList<Profile> people = TextReader.Readpeople();
+		TextReader.Readrelations();
+		
+		for(int i = 0; i < people.size(); i++) {
+			profiles.add(people.get(i));
+			index.add(people.get(i).getUName());
+		}
+		
+	}
+	
+	
+	
 	public static void addDemoUsers() {
 		//Creating Demo Users
 				Profile Allice = new Profile("Allice","F","25","VIC");
@@ -452,6 +465,15 @@ public class Driver {
 			
 			
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
 				
 		
 }
