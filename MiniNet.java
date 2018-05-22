@@ -72,8 +72,14 @@ public class MiniNet extends Application {
 		AddProfileClass AddProfilehandler = new AddProfileClass();
 		btAddProfile.setOnAction(AddProfilehandler);
 		
+		Button bttxt = new Button("Add From .txt File");
+		pane.add(bttxt, 5, 3);
+		bttxt.setOnAction(o -> {
+			Driver.txtUsers();
+        });
+		
 		Button btExit = new Button("Exit");
-		pane.add(btExit, 5, 3);
+		pane.add(btExit, 6, 3);
 		ExitClass Exithandler = new ExitClass();
 		btExit.setOnAction(Exithandler);
 		
